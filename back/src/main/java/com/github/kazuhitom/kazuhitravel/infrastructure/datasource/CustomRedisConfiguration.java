@@ -21,7 +21,7 @@ public class CustomRedisConfiguration {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(connectionFactory);
         template.setKeySerializer(new StringRedisSerializer());
-        template.setValueSerializer(new GenericJackson2JsonRedisSerializer(new CustomObjectMapper())); // ここだけカスタム
+        template.setValueSerializer(new GenericJackson2JsonRedisSerializer(new CustomRedisObjectMapper())); // ここだけカスタム
         template.setHashKeySerializer(template.getKeySerializer());
         template.setHashValueSerializer(template.getValueSerializer());
         return template;
