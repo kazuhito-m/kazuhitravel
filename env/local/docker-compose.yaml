@@ -1,0 +1,10 @@
+version: '3' 
+
+services:
+  redis-for-test:
+    image: redis:7.0.10-alpine3.17
+    container_name: kazuhitravel-db-for-test
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_PASSWORD=kazuhitravel_saiko
