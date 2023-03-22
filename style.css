@@ -12,7 +12,7 @@
   width: 25%;
   height: 820px;
 }
-#content {
+#map {
   position: relative;
   width: 75%;
   padding-top: 75%; /* = height ÷ width × 100 */

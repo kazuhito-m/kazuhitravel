@@ -12,17 +12,26 @@
     <div id="wrapper">
         <div id="top">サイトタイトル</div>
         <div id="main">
-            <div id="content">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3284.094038614845!2d135.6113121655463!3d34.60178349601654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1679467157731!5m2!1sja!2sjp"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map">
             </div>
             <div id="right">
                 <iframe id="timelineframe" src="timeline.html" frameborder="0" />
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        function initMap() {
+            const opts = {
+                zoom: 15,
+                center: new google.maps.LatLng(35.709984, 139.810703)
+            };
+            const map = new google.maps.Map(document.getElementById("map"), opts);
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACs8AwPZI0ihYOeILa1Dm6U6NndDIFOpo&callback=initMap">
+    </script>
 </body>
 
 </html>
