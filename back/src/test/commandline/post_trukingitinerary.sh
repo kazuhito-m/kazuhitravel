@@ -9,6 +9,6 @@ SCRIPT_DIR=$(
 cd ${SCRIPT_DIR}
 
 curl -X POST "${SERVER}/api/trucking" \
-  --verbose \
   -H "Content-type: application/json" \
   -d '{"longitude":100.1, "latitude":200.0}'
+#  --verbose \
