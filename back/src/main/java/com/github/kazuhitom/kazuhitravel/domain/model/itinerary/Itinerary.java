@@ -11,6 +11,6 @@ public record Itinerary(
 ) {
     public long id() {
         ZonedDateTime zdtOfJst = timestamp.atZone(ZoneOffset.ofHours(+9));
-        return zdtOfJst.toEpochSecond();
+        return zdtOfJst.toInstant().toEpochMilli();
     }
 }
