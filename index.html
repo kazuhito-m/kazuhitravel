@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="./map.js"></script>
 </head>
 
 <body>
@@ -20,18 +21,10 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        function initMap() {
-            const opts = {
-                zoom: 15,
-                center: new google.maps.LatLng(35.709984, 139.810703)
-            };
-            const map = new google.maps.Map(document.getElementById("map"), opts);
-        }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh7ciynTLPxuIUpxJMsNPj5x0n_bXxiGA&callback=initMap">
-    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh7ciynTLPxuIUpxJMsNPj5x0n_bXxiGA&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 
 </html>
