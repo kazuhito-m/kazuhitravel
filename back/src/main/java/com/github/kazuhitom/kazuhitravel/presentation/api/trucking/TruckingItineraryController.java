@@ -1,6 +1,5 @@
 package com.github.kazuhitom.kazuhitravel.presentation.api.trucking;
 
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import com.github.kazuhitom.kazuhitravel.application.service.ItineraryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,8 +16,6 @@ public class TruckingItineraryController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void trackingItinerary(@RequestBody TruckingGeoRequest request) {
-        LOGGER.info("実際に、リクエストはコントローラに届きました。");
-        LOGGER.info(ToStringSerializer.instance.valueToString(request));
         service.register(request.toItinerary());
     }
 
