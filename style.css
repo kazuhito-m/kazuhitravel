@@ -13,10 +13,10 @@
   height: 820px;
 }
 #map {
-  position: relative; 
-  padding-top: 75%;
+  /* position: relative; */
+  /* padding-top: 75%; */
   height: 100%;
-  float: left ;
+  /* float: left ; */
 }
 #content iframe {
   position: absolute;
