@@ -37,7 +37,7 @@ public class ItineraryDatasource implements ItineraryRepository {
 
     @Override
     public void register(Itinerary itinerary) {
-        ofl().leftPush(LIST_KEY, itinerary);
+        ofl().rightPush(LIST_KEY, itinerary);
     }
 
     private List<Itinerary> range(long start, long end) {
