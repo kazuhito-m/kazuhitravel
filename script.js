@@ -5,6 +5,5 @@ function reloadTimelineFrame() {
 }
 
 window.addEventListener('load', function () {
-    console.log('loadイベントのはず');
     setInterval(reloadTimelineFrame, 1000);
 });
