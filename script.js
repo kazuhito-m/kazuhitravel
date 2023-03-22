@@ -1,5 +1,4 @@
 function reloadTimelineFrame() {
-    console.log('ソラ毎回、警告でるやろがい！')
     const ifr = document.getElementById('timelineframe');
     console.log(ifr);
     ifr.contentWindow.location.reload(true);
